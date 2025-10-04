@@ -8,4 +8,12 @@ public class Aggregator {
     public String getMainFeature() {
         return feature3.getFeature3();
     }
+
+    public String getFeature1() {
+        return feature3.getFeature1();
+    }
+
+    public String getFeature2() {
+        return feature3.getFeature2();
+    }
 }
