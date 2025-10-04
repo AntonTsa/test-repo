@@ -11,4 +11,12 @@ public class Feature3 {
         return "Feature3 combines: " + feature1.getFeature1() + " and " + feature2.getFeature2();
     }
 
+    public String getFeature1() {
+        return feature1.getFeature1();
+    }
+
+    public String getFeature2() {
+        return feature2.getFeature2();
+    }
+
 }

@@ -4,13 +4,17 @@
 package org.example;
 
 public class App {
+    private final Aggregator aggregator = new Aggregator();
 
     public String getGreeting() {
         return "Hello World!";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-        System.out.println(new Aggregator().getMainFeature());
+        App app = new App();
+        System.out.println(app.getGreeting());
+        System.out.println("Feature1: " + app.aggregator.getFeature1());
+        System.out.println("Feature2: " + app.aggregator.getFeature2());
+        System.out.println("Feature 3: " + app.aggregator.getMainFeature());
     }
 }
